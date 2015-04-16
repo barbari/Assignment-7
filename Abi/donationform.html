@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styledonate.css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div id="causetype">
+		<a href="#"><img src="images/i1.jpg" width="200"></a>
+		<button id="dnt-btn">Donate</button>
+	</div>
+	<script>
+		
+			$(document).ready(function(){
+				$("#dnt-btn").click(function(){
+					$("#form").fadeToggle(1000);
+				})
+				
+			})
+		
+	</script>
+<!-- div for form left and right -->
+	<div class="row" id="form">
+<!-- left form personal info -->
+		<form class="col-5 form-horizontal-left">
+				<legend>Personal Information</legend>
+<!-- First name -->
+		  	<div class="form-group">
+		    	<label for="inputFname" class="col-4 control-label">First Name</label>
+		    	<div class="col-7">
+		      	<input type="text" class="form-control" id="inputFname" placeholder="First Name" size="30">
+		    	</div>
+		  	</div>
+<!-- last name -->
+		  	<div class="form-group">
+		    	<label for="inputLname" class="col-4 control-label">Last Name</label>
+		    	<div class="col-7">
+		      	<input type="text" class="form-control" id="inputLname" placeholder="Last Name" size="30">
+		    	</div>
+		  	</div>
+<!-- inout address -->
+		  	<div class="form-group">
+		    	<label for="inputaddress" class="col-4 control-label">Address Line1</label>
+		    	<div class="col-7">
+		      	<input type="text" class="form-control" id="inputAddress" placeholder="Address Line1" size="50">
+		    	</div>
+		  	</div>
+<!-- input city -->
+		  	<div class="form-group">
+		    	<label for="inputcity" class="col-4 control-label">City</label>
+		    	<div class="col-7">
+		      	<input type="text" class="form-control" id="inputcity" placeholder="In which city you lives">
+		    	</div>
+		  	</div>
+<!-- select state -->
+		  	<div class="form-group">
+		    	<label for="selectstate" class="col-4 control-label">State</label>
+		    	<div class="col-7">
+		      		<select  class="form-control" id="selectstate">
+				      	<option>Alabama</option>
+				      	<option>Alaska </option>
+				      	<option>Arizona</option>
+				      	<option>Arkansas </option>
+				      	<option>California</option>
+				      	<option>Colorado</option>
+				      	<option>Connecticut</option>
+				      	<option>Delaware </option>
+				      	<option>Florida </option>
+				      	<option>Georgia</option>
+				      	<option>Hawaii</option>
+				      	<option>Idaho </option>
+				      	<option>Illinois Indiana</option>
+				      	<option>Iowa</option>
+				      	<option>Kansas</option>
+				      	<option>Kentucky </option>
+				      	<option>Louisiana </option>
+				      	<option>Maine</option>
+				      	<option>Maryland</option>
+				      	<option>Massachusetts</option>
+				      	<option>Michigan</option>
+				      	<option>Minnesota </option>
+				      	<option>Mississippi</option>
+				      	<option>Missouri </option>
+				      	<option>Montana Nebraska </option>
+				      	<option>Nevada</option>
+				      	<option>New Hampshire </option>
+				      	<option>New Jersey </option>
+				      	<option>New Mexico </option>
+				      	<option>New York </option>
+				      	<option>North Carolina</option>
+				      	<option>North Dakota</option>
+				      	<option>Ohio </option>
+				      	<option>Oklahoma </option>
+				      	<option>Oregon </option>
+				      	<option>Pennsylvania Rhode Island </option>
+				      	<option>South Carolina</option>
+				      	<option>South Dakota </option>
+				      	<option>Tennessee </option>
+				      	<option>Texas </option>
+				      	<option>Utah </option>
+				      	<option>Vermont </option>
+				      	<option>Virginia</option>
+				      	<option>Washington </option>
+				      	<option>West Virginia </option>
+				      	<option>Wisconsin</option>
+				      	<option>Wyoming</option>
+		      		</select>
+		    	</div>
+		  	</div>
+<!-- enter zipcode -->
+		   	<div class="form-group">
+		    	<label for="inputzip" class="col-4 control-label">Zipcode</label>
+		    	<div class="col-7">
+		      	<input type="number" class="form-control" id="inputzip" placeholder="zipcode">
+		    	</div>
+		  	</div>
+<!-- email address -->
+		  	<div class="form-group">
+		    	<label for="inputemail" class="col-4 control-label">Email</label>
+		    	<div class="col-7">
+		      	<input type="email" class="form-control" id="inputemail" placeholder="abc@example.com" size="40">
+		    	</div>
+		  	</div>
+<!-- submit button		   -->
+		  	<div class="form-group">
+		    	<div class="col-12">
+		      		<button type="submit" class="btn-default" onclick='confirm("you are submiting personal Information")'>Submit P.I.</button>
+		    	</div>
+		  	</div>
+		</form>
+<!-- right form for amount info -->
+		<form class="col-5 form-horizontal-right" >
+<!-- this is amount row -->
+			<div class="form-group">
+			    <label class=" col-4 sr-only" for="exampleInputAmount">Amount (in dollars)
+			    </label>
+			    <div class="col-6 input-group">
+			      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount in $">
+			    </div>
+			</div>
+<!-- this is credit card number -->
+			<div class="form-group">
+		    	<label for="inputcreditcard" class="col-4 control-label">Credit Card Number
+		    	</label>
+		    	<div class="col-6">
+		      	<input type="number" class="form-control" id="inputcardnumber" placeholder="4853948535025934" size="40">
+		    	</div>
+		  	</div>
+<!-- this shows expiry date -->
+		  	<div class="form-select">
+			    <label class="col-4 expire" for="select expiry date">Expire Date</label>
+			    <div class="col-7 input-group exp">
+			      <select class="col-2 form-control" id="expirymonth" placeholder="January">
+			      	<option>1</option>
+			      	<option>2</option>
+			      	<option>3</option>
+			      	<option>4</option>
+			      	<option>5</option>
+			      	<option>6</option>
+			      	<option>7</option>
+			      	<option>8</option>
+			      	<option>9</option>
+			      	<option>10</option>
+			      	<option>11</option>
+			      	<option>12</option>
+			      </select>
+
+			       <input class="col-3 form-control" id="expiryyear" placeholder="yyyy">
+			    </div>
+			</div>
+<!-- by clicking this button submit form -->
+			<div class="form-group"></div>
+			<div class="col-12">
+				<button class="donation" onclick='confirm("you are about to donate for cause")'>Donate</button>
+			</div>
+		</form>
+	</div> <!-- whole form div close -->
+<!-- map and contact -->
+	<div class="col-12" for="map-and-contact" id="mac">
+		<div class="col-6" id="map-canvas"></div>
+		<div class="col-4" id="contactinfo">
+<!-- address -->
+			<div id="address">
+				<span class="col-4">Address : </span>
+				<span class="col-6 text-left">90 John street<br>New York, New York<br>10038<br><br></span>
+			</div>
+<!-- contact -->
+			<div id="contact">
+				<div class="col-4">Contact : </div>
+				<div class="col-6 text-left">8888888888<br><br></div>
+			</div>
+<!-- email address -->
+			<div id="emailadd">
+				<div class="col-4">Email : </div>
+				<div class="col-6 text-left">blablabla@gmail.com</div>
+			</div>
+<!-- social links -->
+			<div class="col-12"id="medialinks">
+				<div class="col-1 facebook">
+					<a href="#"><img src="images/facebook.png" width="50"></a>
+				</div>
+				<div class="col-1 twitter">
+					<a href="#"><img src="images/twitter.png" width="50"></a>
+				</div>
+				<div class="col-1 github">
+					<a href="#"><img src="images/github.png" width="50"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- scripting for map -->
+	
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.7079226,-74.0064443),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</body>
+</html>
