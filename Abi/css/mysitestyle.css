@@ -217,8 +217,8 @@
     
 }
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: 0px;
+    margin-left: 15px;
 }
 .box{
     background-color:#6e6e6e;
@@ -305,6 +305,43 @@
 
 .text-justify {
     text-align: justify
+}
+
+
+#dfl{
+    background-color: red;
+    margin-top: 40px;
+    height: 500px;
+
+}
+
+#dfr{
+    background-color: blue;
+    margin-top: 40px;
+    height: 500px;
+}
+#mac{
+    padding: 50px;
+}
+#map-canvas {
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 20px;
+        }
+#contactinfo{
+    margin-left: 100px;
+    height: 340px;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+    background-color: rgba(179, 179, 188,.2);
+    border-radius: 20px;
+    font-size: 120%;
+}
+#medialinks{
+    padding-top: 40px;
+    padding-left: 80px;
+}
 
 
 		

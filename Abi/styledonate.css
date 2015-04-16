@@ -1,0 +1,160 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.row {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+.box{
+    background-color:#6e6e6e;
+    border:splid 1px #808080;
+    padding:10px;margin-bottom:50px;
+    
+}
+        
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12
+{
+    position: relative;
+    min-height: 1px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    }
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+    
+    float: left;
+    }
+    
+.col-12 {
+    width: 100%
+}
+
+.col-11 {
+    width: 91.66666667%
+}
+
+.col-10 {
+    width: 83.33333333%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-8 {
+    width: 66.66666667%
+}
+
+.col-7 {
+    width: 58.33333333%
+}
+
+.col-6 {
+    width:45%
+}
+
+.col-5 {
+    width: 41.66666667%
+}
+
+.col-4 {
+    width: 29%
+}
+
+.col-3 {
+    width: 35%
+}
+
+.col-2 {
+    width: 16.66666667%
+}
+
+.col-1 {
+    width: 8.33333333%
+}
+.col-push-3 {
+    left: 30%
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-justify {
+    text-align: justify
+}
+
+.form-horizontal-left{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+}
+.form-horizontal-left input{
+    border-radius: 3px;
+}
+.btn-default{
+    margin-left: 35%;
+    height:30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.form-horizontal-right{
+    margin-top: 10%;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+    }
+.form-horizontal-right input{
+    border-radius: 3px;
+}
+.donation{
+    margin-left: 35%;
+    height: 30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.exp{
+    padding-top: 15px;
+}
+#form{
+    display: none;
+}
+
+#mac{
+    padding: 50px;
+}
+#map-canvas {
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 20px;
+        }
+#contactinfo{
+    margin-left: 100px;
+    height: 340px;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+    background-color: rgba(179, 179, 188,.2);
+    border-radius: 20px;
+    font-size: 120%;
+}
+#medialinks{
+    padding-top: 40px;
+    padding-left: 80px;
+}
