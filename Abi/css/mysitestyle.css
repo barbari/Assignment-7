@@ -26,6 +26,7 @@
             text-align:center;
     		padding: 7.5px;
     		font-family: arial;
+              margin-top: 10px;
 
     		}
 
@@ -148,9 +149,10 @@
         }
 
         #navbar{
-            
-            padding-right: 15px;
             float: right;
+            padding-right: 100px;
+            float: right;
+            padding-top: 10;
         }
         #navul{
             list-style-type: none;
