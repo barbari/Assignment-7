@@ -110,9 +110,9 @@
     	#footer{
             
     		height:90px;
-    		width: 99.85%;
+    		width: 100%;
     		/*margin-top:11%;*/
-    		background-color:rgba(102,204,0,.99);
+    		background-color:#999;
     		font-family: arial;
     		color: black;
             clear: both;
@@ -128,7 +128,7 @@
         #footerprofile a:hover, a:link, a:visited{
             color: black;
         }
-        #footerp{
+        #footer p{
             line-height: 25px;
             padding-left: 3%;
             padding-top: 7px;
@@ -289,6 +289,7 @@
 .col-1 {
     width: 8.33333333%
 }
+
 .col-push-3 {
     left: 30%
 }
@@ -344,6 +345,84 @@
     padding-top: 40px;
     padding-left: 80px;
 }
+/*this css is for program pages*/
+
+.programs img{
+    float: left;
+    padding: 10px;
+}
+.programs p{
+    padding: 5px;
+}
+.programs h1{
+    text-align: center;
+    color: black;
+}
+.donate{
+    margin-top: 100px;
+    width: 2%;
+    height: 100px;
+    border-radius: 5px;
+}
+.program1, .program2, .program3, .program4,.program5, .program6{
+     background-color:#F4F4F4;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: scroll;
+    border-radius: 10px;
+}
+
+.program1, .program3, .program5{
+    margin-left: 30px;
+    
+}
+/*.form-horizontal-left{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+}
+.form-horizontal-left input{
+    border-radius: 3px;
+}
+.btn-default{
+    margin-left: 35%;
+    height:30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.form-horizontal-right{
+    margin-top: 10%;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+    }
+.form-horizontal-right input{
+    border-radius: 3px;
+}
+.donation{
+    margin-left: 35%;
+    height: 30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.exp{
+    padding-top: 15px;
+}
+#form{
+    display: none;
+}
+
+#mac{
+    padding: 50px;
+}*/
+
+
+
 
 
 		
