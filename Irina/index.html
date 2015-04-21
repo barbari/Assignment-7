@@ -3,69 +3,51 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-    	<link rel="stylesheet" href="css/bootstrap.css">
+    	<link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/ionicons.min.css" rel="stylesheet">
     	<link rel="stylesheet" href="css/style.css">
         <script src="js/JavaScript"></script>
 <style >
 
 @media ( min-width :300px) {
-#clock{
-background-color: #BEF5FF;
-border: solid 1px #3A9FC3;
-padding: 25px;
-font-size:50px;
-color: #3A9FC3;
-}
+
 }
 @media ( min-width :668px) {
 
-#clock{
-background-color: #FFD3D3;
-border: solid 1px #FC7070;
-padding: 50px;
-font-size:70px;
-color: #FC7070;
 
-}
 
 }
 @media ( min-width :1268px) {
 
-#clock{
-background-color: #E2FFD8;
-border: solid 1px #5C8050;
-padding: 75px;
-font-size:100px;
-color: #5C8050;
 
-}
 
 }
 
 </style>
     </head>
-<body onload="MyClock()">
+<body >
 <header >
             <section class="bg-white shadow">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-1 col-xs-4">
+                        <div class="col-sm-2 col-xs-4">
                             <figure class="identity">
-                            	<a href="index-main.html">
-                            		Friends of Animals 
+                            	<a href="index.html">
+                            		<span>Friends of Animals </span>
                             	</a>
                             </figure>
                         </div>
-                        <div class="col-sm-11 col-xs-8">
+                        <div class="col-sm-10 col-xs-8">
                            <nav class="main-nav">
-								<a href="#" class="responsive-menu align-right"><i
-									class="icon-333 font-2x text-black"></i></a>
+								<a href="index.html" class="responsive-menu align-right">
+                                    <i
+									class="icon-542 font-2x text-black"></i></a>
 								<ul class="inline-list align-right uppercase">
 									
 									</li>
 									<li><a href="index.html">Home</a></li>
 									<li><a href="about.html">About</a></li>
-									<li><a href="prgrams.html">Programs</a></li>
+									<li><a href="programs.html">Programs</a></li>
 									<li><a href="contact.html">Contact</a></li>
 									
 									
@@ -80,25 +62,50 @@ color: #5C8050;
         </header> 
 
 		
-<section class="box">
+<section class="box wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-								
-
-<div  class="text-center">
-        <img src="img/home-1.jpg">
-<h1 class="txt-over" > Every 60 seconds a species dies out</h1>
-
-            <h4 class="txt-over"> each minutes counts, each donation helps.</h4>
-</div>
-
-							</div>
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
-</section> <!-- /.box -->
-
-
+			<div class="col-md-12" style="margin-top:30px;" >
+                 <img src="img/home-1.jpg">
+                <div  class="text-center" style=" margin-top: -200px; ">
+                     <span style="background-color:rgba(255,0,0,0.3);padding:10px;color:white; font-size:35px;"> Every 60 seconds a species dies out</span><br>
+                    <span style="background-color:rgba(0,0,0,0.3);padding:10px;color:white; font-size:25px;"> each minutes counts, each donation helps.</span>
+                </div>
+            </div>
+		</div> 
+	</div> 
+     <div class="push"></div>
+</section> 
+<footer id="footer" class="footer" style="margin-top:60px;">
+              
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12 footer-social">
+                            <ul class="connected-icons text-center">
+                                <li class="connected-icon"><a target="_blank" href="#"><i class="fa fa-twitter fa-2-5x"></i></a></li>
+                                <li class="connected-icon"><a target="_blank" href="#"><i class="fa fa-facebook fa-2-5x"></i></a></li>
+                                <li class="connected-icon"><a target="_blank" href="#"><i class="fa fa-instagram fa-2-5x"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                       
+                        
+                        
+                        <div class="col-lg-12 footer-menu">
+                           <span class="pull-left">Copyright &copy; 2014 <a href="#" style="margin:0;"></a>. All Rights Reserved.</span>
+                            <span class="pull-right">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="programs.html">Services</a>
+                               <a href="contact.html">Contact</a>
+                                
+                            </span>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+        </footer>
 
 
 </body>
