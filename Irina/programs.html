@@ -67,6 +67,163 @@
                  <div class="col-md-12 text-center"> <h2>Our programs </h2></div>
 
              </div>
+
+                     <!-- div for form left and right -->
+    <div class="row" id="form">
+<!-- left form personal info -->
+        <form class="col-md-5 form-horizontal-left">
+                <legend>Personal Information</legend>
+<!-- First name -->
+            <div class="form-group">
+                <label for="inputFname" class="col-md-4 control-label">First Name</label>
+                <div class="col-md-7">
+                <input type="text" class="form-control" id="inputFname" placeholder="First Name" size="30">
+                </div>
+            </div>
+<!-- last name -->
+            <div class="form-group">
+                <label for="inputLname" class="col-md-4 control-label">Last Name</label>
+                <div class="col-md-7">
+                <input type="text" class="form-control" id="inputLname" placeholder="Last Name" size="30">
+                </div>
+            </div>
+<!-- inout address -->
+            <div class="form-group">
+                <label for="inputaddress" class="col-md-4 control-label">Address Line1</label>
+                <div class="col-md-7">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address Line1" size="50">
+                </div>
+            </div>
+<!-- input city -->
+            <div class="form-group">
+                <label for="inputcity" class="col-md-4 control-label">City</label>
+                <div class="col-md-7">
+                <input type="text" class="form-control" id="inputcity" placeholder="In which city you lives">
+                </div>
+            </div>
+<!-- select state -->
+            <div class="form-group">
+                <label for="selectstate" class="col-md-4 control-label">State</label>
+                <div class="col-md-7">
+                    <select  class="form-control" id="selectstate">
+                        <option>Alabama</option>
+                        <option>Alaska </option>
+                        <option>Arizona</option>
+                        <option>Arkansas </option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware </option>
+                        <option>Florida </option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho </option>
+                        <option>Illinois Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky </option>
+                        <option>Louisiana </option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota </option>
+                        <option>Mississippi</option>
+                        <option>Missouri </option>
+                        <option>Montana Nebraska </option>
+                        <option>Nevada</option>
+                        <option>New Hampshire </option>
+                        <option>New Jersey </option>
+                        <option>New Mexico </option>
+                        <option>New York </option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio </option>
+                        <option>Oklahoma </option>
+                        <option>Oregon </option>
+                        <option>Pennsylvania Rhode Island </option>
+                        <option>South Carolina</option>
+                        <option>South Dakota </option>
+                        <option>Tennessee </option>
+                        <option>Texas </option>
+                        <option>Utah </option>
+                        <option>Vermont </option>
+                        <option>Virginia</option>
+                        <option>Washington </option>
+                        <option>West Virginia </option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select>
+                </div>
+            </div>
+<!-- enter zipcode -->
+            <div class="form-group">
+                <label for="inputzip" class="col-md-4 control-label">Zipcode</label>
+                <div class="col-md-7">
+                <input type="number" class="form-control" id="inputzip" placeholder="zipcode">
+                </div>
+            </div>
+<!-- email address -->
+            <div class="form-group">
+                <label for="inputemail" class="col-md-4 control-label">Email</label>
+                <div class="col-md-7">
+                <input type="email" class="form-control" id="inputemail" placeholder="abc@example.com" size="40">
+                </div>
+            </div>
+<!-- submit button         -->
+            <div class="form-group">
+                <div class="col-md-12">
+                    <button type="submit" class="btn-default" onclick='confirm("you are submiting personal Information")'>Submit P.I.</button>
+                </div>
+            </div>
+        </form>
+<!-- right form for amount info -->
+        <form class="col-md-5 form-horizontal-right" >
+<!-- this is amount row -->
+            <div class="form-group">
+                <label class=" col-md-4 sr-only" for="exampleInputAmount">Amount (in dollars)
+                </label>
+                <div class="col-md-6 input-group">
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount in $">
+                </div>
+            </div>
+<!-- this is credit card number -->
+            <div class="form-group">
+                <label for="inputcreditcard" class="col-md-4 control-label">Credit Card Number
+                </label>
+                <div class="col-md-6">
+                <input type="number" class="form-control" id="inputcardnumber" placeholder="4853948535025934" size="40">
+                </div>
+            </div>
+<!-- this shows expiry date -->
+            <div class="form-select">
+                <label class="col-md-4 expire" for="select expiry date">Expire Date</label>
+                <div class="col-md-7 input-group exp">
+                  <select class="col-md-2 form-control" id="expirymonth" placeholder="January">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+
+                   <input class="col-md-3 form-control" id="expiryyear" placeholder="yyyy">
+                </div>
+            </div>
+<!-- by clicking this button submit form -->
+            <div class="form-group"></div>
+            <div class="col-md-12">
+                <button class="donation" onclick='confirm("you are about to donate for cause")'>Donate</button>
+            </div>
+        </form>
+    </div> <!-- whole form div close -->
              <div class="row">
                 <div class="col-md-6 well">
                     <ul>
@@ -121,7 +278,7 @@
                         </li>
                     </ul>
                 <div class="col-md-12 ">
-                <button type="button" style="  width: 100%" class="btn btn-danger">Donate</button>
+                <button type="button" style="  width: 100%" class="btn btn-danger" onclick="">Donate</button>
                </div> 
                 </div>
                <div class="col-md-6 well">
@@ -178,6 +335,17 @@
                     </div>
                 </div>
         </footer>
+
+        <script>
+        
+            $(document).ready(function(){
+                $(".btn-danger").click(function(){
+                    $("#form").fadeToggle(1000);
+                })
+                
+            })
+        
+    </script>
 
 
 </body>

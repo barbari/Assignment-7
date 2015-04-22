@@ -1479,6 +1479,54 @@ height: 30px;
     outline: none !important; }
 
 
+    .form-horizontal-left{
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+}
+.form-horizontal-left input{
+    border-radius: 3px;
+}
+.btn-default{
+    margin-left: 35%;
+    height:30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.form-horizontal-right{
+    /*margin-top: 10%;*/
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    border-radius: 15px;
+    line-height: 50px;
+    padding: 30px;
+    border-left: 1px solid white;
+    /*margin-left: 20px;*/
+    }
+.form-horizontal-right input{
+    border-radius: 3px;
+}
+.donation{
+    margin-left: 35%;
+    height: 30px;
+    width: 150px;
+    border-radius: 3px;
+}
+.exp{
+    padding-top: 15px;
+}
+#form{
+  /*position: fixed;*/
+  position: absolute;
+  margin-left: 10%;
+  z-index: 999;
+    display: none;
+}
+
+
+
 
 
 
