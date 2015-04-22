@@ -5,6 +5,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/ionicons.min.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/JavaScript"></script>
 <style >
@@ -70,8 +72,9 @@
 
                      <!-- div for form left and right -->
     <div class="row" id="form">
+
 <!-- left form personal info -->
-        <form class="col-md-5 form-horizontal-left">
+        <form class="col-md-6 form-horizontal form-horizontal-left">
                 <legend>Personal Information</legend>
 <!-- First name -->
             <div class="form-group">
@@ -173,16 +176,16 @@
 <!-- submit button         -->
             <div class="form-group">
                 <div class="col-md-12">
-                    <button type="submit" class="btn-default" onclick='confirm("you are submiting personal Information")'>Submit P.I.</button>
+                    <button type="submit" class="btn-default btn btn-danger" onclick='confirm("you are submiting personal Information")'>Submit P.I.</button>
                 </div>
             </div>
         </form>
 <!-- right form for amount info -->
-        <form class="col-md-5 form-horizontal-right" >
+       <form class="col-md-6 form-horizontal form-horizontal-left">
+                <legend>Financial Information</legend>
 <!-- this is amount row -->
             <div class="form-group">
-                <label class=" col-md-4 sr-only" for="exampleInputAmount">Amount (in dollars)
-                </label>
+                <label class=" col-md-4 control-label" for="exampleInputAmount" >Amount </label>
                 <div class="col-md-6 input-group">
                   <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount in $">
                 </div>
@@ -191,15 +194,15 @@
             <div class="form-group">
                 <label for="inputcreditcard" class="col-md-4 control-label">Credit Card Number
                 </label>
-                <div class="col-md-6">
+                <div class="col-md-6 input-group">
                 <input type="number" class="form-control" id="inputcardnumber" placeholder="4853948535025934" size="40">
                 </div>
             </div>
 <!-- this shows expiry date -->
             <div class="form-select">
-                <label class="col-md-4 expire" for="select expiry date">Expire Date</label>
-                <div class="col-md-7 input-group exp">
-                  <select class="col-md-2 form-control" id="expirymonth" placeholder="January">
+                <label class="col-md-4 control-label" for="select expiry date">Expire Date</label>
+                <div class="col-md-8 input-group exp">
+                  <select class="col-md-2 " id="expirymonth" placeholder="January">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -213,15 +216,32 @@
                     <option>11</option>
                     <option>12</option>
                   </select>
+                  <select class="col-md-3" id="expiryyear" placeholder="yyyy">
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                  </select>
 
-                   <input class="col-md-3 form-control" id="expiryyear" placeholder="yyyy">
+
+                   
                 </div>
             </div>
 <!-- by clicking this button submit form -->
             <div class="form-group"></div>
-            <div class="col-md-12">
-                <button class="donation" onclick='confirm("you are about to donate for cause")'>Donate</button>
-            </div>
+
+             <div class="col-md-12 ">
+                <button class="donation btn btn-danger" onclick='confirm("you are about to donate for cause")'>Donate</button>
+               </div> 
+            
         </form>
     </div> <!-- whole form div close -->
              <div class="row">
@@ -295,6 +315,7 @@
 
                         </li>
                     </ul>
+
                 <div class="col-md-12 ">
                 <button type="button" style="  width: 100%" class="btn btn-danger">Donate</button>
                </div> 
