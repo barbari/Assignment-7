@@ -174,12 +174,12 @@ background-color:rgba(255,0,0,0.3);padding:10px;color:white; font-size:35px;
         
         }
 #contactinfo{
-    margin-left: 100px;
-    height: auto;
-    text-align: center;
+    
+   
+     background-color: rgba(179, 179, 188,.2);
+    border-radius: 20px;
     padding: 30px;
-    line-height: 30px;
-    background-color: rgba(179, 179, 188,.2);
+    min-height: 400px;
    
     
 }
@@ -1480,10 +1480,8 @@ height: 30px;
 
 
     .form-horizontal-left{
-    background-color: rgba(0,0,0,.9);
+  
     color: white;
-    border-radius: 15px;
-    line-height: 50px;
     padding: 30px;
 }
 .form-horizontal-left input{
@@ -1497,9 +1495,9 @@ height: 30px;
 }
 .form-horizontal-right{
     /*margin-top: 10%;*/
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.2);
     color: white;
-    border-radius: 15px;
+    
     line-height: 50px;
     padding: 30px;
     border-left: 1px solid white;
@@ -1522,7 +1520,9 @@ height: 30px;
   position: absolute;
   margin-left: 10%;
   z-index: 999;
-  display: none;
+    display: none;
+    background-color: #555;
+    border-radius: 15px;
 }
 
 

@@ -20,6 +20,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 
 audio,canvas,progress,video {
   display: inline-block;
+
   vertical-align: baseline
 }
 
@@ -2491,7 +2492,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #333;
+  color: #eee;
   border: 0;
   border-bottom: 1px solid #e5e5e5
 }
